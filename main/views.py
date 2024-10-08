@@ -1,9 +1,6 @@
 from django.shortcuts import render,redirect
 from django.contrib.auth import logout,login,authenticate
-from django.urls import reverse
 from django.contrib import messages
-from .forms import QuestionaryForm, QuizForm
-from django.views.decorators.csrf import csrf_exempt
 from main.models import User,Questionary
 
 # Create your views here.
