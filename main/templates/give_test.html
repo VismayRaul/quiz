@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="container mt-5" style="min-height: 500px;">
+    <form method="post">
+        {% csrf_token %}
+        {% for question in questions %}
+            <h3>{{ question.questions }}</h3>
+            <input type="radio" name="question_{{ question.id }}" value="1" required> {{ question.option1 }}<br>
+            <input type="radio" name="question_{{ question.id }}" value="2" required> {{ question.option2 }}<br>
+            <input type="radio" name="question_{{ question.id }}" value="3" required> {{ question.option3 }}<br>
+            <input type="radio" name="question_{{ question.id }}" value="4" required> {{ question.option4 }}<br>
+        {% endfor %}
+        <button type="submit" class="btn btn-primary shadow mt-4">Submit Quiz</button>
+    </form>
+    {% endblock %}
+
