@@ -9,7 +9,7 @@
                 {% csrf_token %}
                 <div class="mb-3">
                     <label for="username" class="form-label">User name</label>
-                    <input type="text" class="form-control" name="username" id="validationCustom01" required>
+                    <input type="text" class="form-control" name="username" placeholder="Enter Username" id="validationCustom01" required>
                     <div class="valid-feedback">
                       Looks good!
                     </div>
@@ -20,16 +20,16 @@
                 </div>
                 <div class="mb-3">
                     <label for="email1" class="form-label">Email address</label>
-                    <input type="email" class="form-control" name="email" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                    <input type="email" class="form-control" name="email" placeholder="Enter email" id="exampleInputEmail1" aria-describedby="emailHelp" required>
                 <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                 </div>
                 <div class="mb-3">
                     <label for="password" class="form-label">Password</label>
-                    <input type="password" class="form-control" name="password" id="exampleInputPassword1" required>
+                    <input type="password" class="form-control" name="password" placeholder="Enter password" id="exampleInputPassword1" required>
                 </div>
                 <div class="mb-3">
                     <label for="password2" class="form-label">Check Password</label>
-                    <input type="password" class="form-control" name="password2" id="exampleInputPassword2" required>
+                    <input type="password" class="form-control" name="password2" placeholder="Re-enter password" id="exampleInputPassword2" required>
                 </div>
                 <button type="submit" class="btn btn-primary shadow">Submit</button>
             </form>
